@@ -6,3 +6,6 @@ data/
 # ignore slurm files
 slurm-*.out
 
+*/model.ckpy
+
+tutorials/01-basics/linear_regression/model.ckpt

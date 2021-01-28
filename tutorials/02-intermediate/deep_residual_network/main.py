@@ -70,7 +70,7 @@ class ResidualBlock(nn.Module):
         out = self.bn2(out)
         if self.downsample:
             residual = self.downsample(x)
-        out += residual
+        out += residual # addition not concat
         out = self.relu(out)
         return out
 
@@ -114,6 +114,7 @@ class ResNet(nn.Module):
         return out
     
 model = ResNet(ResidualBlock, [2, 2, 2]).to(device)
+print(model)
 
 
 # Loss and optimizer
