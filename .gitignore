@@ -13,3 +13,5 @@ tutorials/02-intermediate/deep_residual_network/resnet.ckpt
 # imgs
 tutorials/03-advanced/generative_adversarial_network/samples/**
 tutorials/03-advanced/variational_autoencoder/samples/**
+tutorials/03-advanced/generative_adversarial_network/D.ckpt
+tutorials/03-advanced/generative_adversarial_network/G.ckpt
