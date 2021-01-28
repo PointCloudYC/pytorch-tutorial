@@ -6,6 +6,10 @@ data/
 # ignore slurm files
 slurm-*.out
 
-*/model.ckpy
-
+# models
 tutorials/01-basics/linear_regression/model.ckpt
+tutorials/02-intermediate/deep_residual_network/resnet.ckpt
+
+# imgs
+tutorials/03-advanced/generative_adversarial_network/samples/**
+tutorials/03-advanced/variational_autoencoder/samples/**
