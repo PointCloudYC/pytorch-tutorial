@@ -31,6 +31,9 @@ This repository provides tutorial code for deep learning researchers to learn [P
 #### 4. Utilities
 * [TensorBoard in PyTorch](https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/04-utils/tensorboard)
 
+#### 5.multi-parallel
+todo
+
 
 <br/>
 
