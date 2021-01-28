@@ -4,7 +4,7 @@ import torchvision
 import torchvision.transforms as transforms
 
 
-# Device configuration
+# Device configuration(cuda:0, need specify which gpu to use)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 # Hyper parameters

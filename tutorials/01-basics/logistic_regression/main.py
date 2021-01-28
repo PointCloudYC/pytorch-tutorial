@@ -4,6 +4,19 @@ import torchvision
 import torchvision.transforms as transforms
 
 
+"""
+**DL paradigm i.e. find optimal model parameters by numerical iteration(i.e. gradient descent); the key here is how to compute the gradient of parameters(weights) efficiently? use backprop which is implemented in pytorch/tf using autograd/audodiff.**
+
+- (X,Y); dataset and dataloader
+- computation graph; Loss = f(W|X,Y)
+  - model; define how to get pred using X and operations(layers/blocks)
+  - loss;
+- learning; update weights using gradient descent(optimizer)
+  - define optimizer(i.e. update rules) and metrics(i.e. measure distance between pred and ground truth);
+  - training; compute gradients and update weights;
+  - evaluating; compute metrics using learned weights;
+- visualization;
+"""
 # Hyper-parameters 
 input_size = 28 * 28    # 784
 num_classes = 10

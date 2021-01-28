@@ -22,18 +22,19 @@ import torchvision.transforms as transforms
 #                     1. Basic autograd example 1                    #
 # ================================================================== #
 
-# Create tensors.
+# Create tensors(each has value,type,shape,etc) similar to numpy/tensorflow
+# two special attributes `requires_grad`(default is true) and `device`(default is 'cpu')
 x = torch.tensor(1., requires_grad=True)
 w = torch.tensor(2., requires_grad=True)
 b = torch.tensor(3., requires_grad=True)
 
-# Build a computational graph.
+# Build a computational graph(i.e. tensor computation).
 y = w * x + b    # y = 2 * x + 3
 
-# Compute gradients.
+# Compute gradients(y has grad_fn attribute).
 y.backward()
 
-# Print out the gradients.
+# Print out the gradients. (Note: tensor type )
 print(x.grad)    # x.grad = 2 
 print(w.grad)    # w.grad = 1 
 print(b.grad)    # b.grad = 1 
